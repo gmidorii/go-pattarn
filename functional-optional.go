@@ -5,9 +5,9 @@ type FOPattarn struct {
 	optional string
 }
 
-type FOOption func(*FOPattarn) error
+type Option func(*FOPattarn) error
 
-func NewFOPattarn(required string, options ...FOOption) (*FOPattarn, error) {
+func NewFOPattarn(required string, options ...Option) (*FOPattarn, error) {
 	fo := FOPattarn{required: required}
 
 	for _, op := range options {
@@ -19,7 +19,7 @@ func NewFOPattarn(required string, options ...FOOption) (*FOPattarn, error) {
 	return &fo, nil
 }
 
-func optional(s string) FOOption {
+func option(s string) Option {
 	return func(fo *FOPattarn) error {
 		fo.optional = s
 		return nil

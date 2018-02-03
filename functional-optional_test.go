@@ -9,7 +9,7 @@ import (
 func TestNewFOPattarn(t *testing.T) {
 	assert := assert.New(t)
 
-	fo, err := NewFOPattarn("req", optional("op"))
+	fo, err := NewFOPattarn("req", option("op"))
 	if err != nil {
 		t.Errorf("create struct error :%v", err)
 	}
