@@ -7,3 +7,6 @@ func ExamplesyncWait() {
 	// first
 	// second
 }
+
+// quotation:
+// https://mattn.kaoriya.net/software/lang/go/20160328114637.htm
