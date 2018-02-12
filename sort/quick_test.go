@@ -2,15 +2,25 @@ package sort
 
 import (
 	"testing"
-
-	"github.com/stretchr/testify/assert"
 )
 
-var s []int = []int{3, 5, 6, 1, 3, 4, 6}
+//var s []int = []int{3, 5, 6, 1, 3, 4, 6, 10, 1000}
+
+var data = []struct {
+	seed     []int
+	expected []int
+}{
+	{
+		[]int{3, 5, 7, 1, 3, 4, 6, 10, 1000},
+		[]int{1, 3, 3, 4, 5, 6, 7, 10, 1000},
+	},
+}
 
 func TestQuickSort(t *testing.T) {
-	res := quickSort(s)
-	assert.Equal(t, s, []int{})
+	for _, v := range data {
+		a := quickSort(v.seed)
+		assertSlice(t, v.expected, a)
+	}
 }
 
 func assertSlice(t *testing.T, e, a []int) {
