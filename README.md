@@ -1,11 +1,18 @@
 # go-pattarn
 
-### Pattarn
+## Pattarn
 
-#### Functional Option Pattarn
+### Functional Option Pattarn
+- `functional-optional.go`
 
-#### sync.WaitGroup
+### sync.WaitGroup
+- `sync.go`
 
-#### goroutine&channel
+### goroutine&channel
 
-#### append string
+### append string
+
+### Sort
+
+#### QuickSort
+- `sort/quick.go`
