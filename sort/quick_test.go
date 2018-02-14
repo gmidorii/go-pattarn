@@ -18,7 +18,10 @@ var data = []struct {
 
 func TestQuickSort(t *testing.T) {
 	for _, v := range data {
-		a := quickSort(v.seed)
+		a, err := quickSort(v.seed)
+		if err != nil {
+			t.Errorf("error: %v", err)
+		}
 		assertSlice(t, v.expected, a)
 	}
 }
