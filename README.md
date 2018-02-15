@@ -16,3 +16,4 @@
 
 #### QuickSort
 - `sort/quick.go`
+- `sort/quick_test.go`
