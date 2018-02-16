@@ -1,5 +1,6 @@
 package main
 
+// ExamplesyncWait is syncWait sysout test
 func ExamplesyncWait() {
 	syncWait("first", "second")
 
