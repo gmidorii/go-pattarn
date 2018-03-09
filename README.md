@@ -3,10 +3,13 @@
 ## Pattarn
 
 ### Functional Option Pattarn
-- `functional-optional.go`
+- functional-optional.go
 
 ### sync.WaitGroup
-- `sync.go`
+- sync.go
+
+### semephore
+- semephore.go
 
 ### goroutine&channel
 
@@ -15,5 +18,5 @@
 ### Sort
 
 #### QuickSort
-- `sort/quick.go`
-- `sort/quick_test.go`
+- sort/quick.go
+- sort/quick_test.go
